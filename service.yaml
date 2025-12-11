@@ -1,0 +1,11 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: cicd-k3s-service
+spec:
+  selector:
+    app: cicd-k3s-demo
+  ports:
+    - port: 80
+      targetPort: 8080
+  type: LoadBalancer

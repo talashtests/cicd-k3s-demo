@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: cicd-k3s-demo
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: cicd-k3s-demo
+  template:
+    metadata:
+      labels:
+        app: cicd-k3s-demo
+    spec:
+      containers:
+      - name: cicd-k3s-demo
+        image: ghcr.io/talashtests/cicd-k3s-demo:latest
+        ports:
+        - containerPort: 8080
