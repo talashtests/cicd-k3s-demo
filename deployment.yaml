@@ -12,6 +12,8 @@ spec:
       labels:
         app: cicd-k3s-demo
     spec:
+      imagePullSecrets:
+        - name: ghcr-secret
       containers:
       - name: cicd-k3s-demo
         image: ghcr.io/talashtests/cicd-k3s-demo:latest
