@@ -4,7 +4,7 @@ WORKDIR /app
 
 COPY app.py /app
 
-RUN pip install flash
+RUN pip install flask
 
 EXPOSE 8080
 
