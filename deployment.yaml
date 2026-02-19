@@ -16,6 +16,6 @@ spec:
         - name: ghcr-secret
       containers:
       - name: cicd-k3s-demo
-        image: ghcr.io/talashtests/cicd-k3s-demo:108
+        image: ghcr.io/talashtests/cicd-k3s-demo:109
         ports:
         - containerPort: 8080
