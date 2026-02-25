@@ -18,7 +18,8 @@ spec:
       - name: cicd-k3s-demo
         image: ghcr.io/talashtests/cicd-k3s-demo:198
         ports:
-        - containerPort: 8081
+        - containerPort: 8080
+
 
 
 
